@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-01 12:13:07.140691",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "link",
+  "is_prime_member",
+  "content_type",
+  "image",
+  "column_break_os4zo",
+  "attach",
+  "date",
+  "barcode"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Link",
+   "label": "Link",
+   "options": "Library Member"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_prime_member",
+   "fieldtype": "Check",
+   "label": "Is Prime Member"
+  },
+  {
+   "fieldname": "content_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "column_break_os4zo",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-01 13:16:52.552259",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Demo",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

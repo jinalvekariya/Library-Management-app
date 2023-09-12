@@ -7,68 +7,32 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "link",
-  "is_prime_member",
-  "content_type",
-  "image",
-  "column_break_os4zo",
-  "attach",
-  "date",
-  "barcode"
+  "first_name",
+  "last_name",
+  "full_name"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "first_name",
    "fieldtype": "Data",
-   "label": "Name"
+   "label": "First Name"
   },
   {
-   "fieldname": "link",
-   "fieldtype": "Link",
-   "label": "Link",
-   "options": "Library Member"
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
   },
   {
-   "default": "0",
-   "fieldname": "is_prime_member",
-   "fieldtype": "Check",
-   "label": "Is Prime Member"
-  },
-  {
-   "fieldname": "content_type",
-   "fieldtype": "Select",
-   "label": "Type",
-   "options": "\nYes\nNo"
-  },
-  {
-   "fieldname": "image",
-   "fieldtype": "Attach Image",
-   "label": "Image"
-  },
-  {
-   "fieldname": "attach",
-   "fieldtype": "Attach",
-   "label": "Attach"
-  },
-  {
-   "fieldname": "date",
-   "fieldtype": "Datetime",
-   "label": "Date"
-  },
-  {
-   "fieldname": "barcode",
-   "fieldtype": "Barcode",
-   "label": "Barcode"
-  },
-  {
-   "fieldname": "column_break_os4zo",
-   "fieldtype": "Column Break"
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Full Name",
+   "options": "f\"{doc.first_name} {doc.last_name}\""
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-01 13:16:52.552259",
+ "modified": "2023-09-04 18:30:24.477353",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Demo",

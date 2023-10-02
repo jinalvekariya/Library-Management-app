@@ -4,12 +4,9 @@
 from __future__ import unicode_literals
 import frappe
 import re
-from frappe.utils import formatdate
 from collections import defaultdict
-from frappe.model.document import Document
 from frappe import _
 from frappe.utils import *
-from frappe.utils import flt
 
 def execute(filters=None):
     columns = get_columns()
